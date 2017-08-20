@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="head">
+        Wprowadź dane
+    </header>
+    <div id="formularz">
+        <form action="">
+            <label for="wplata">Wpłata w PLN: </label>
+            <input type="number" id="wplata" min="100" value="100">
+
+            <label for="okres-kapitalizacji">Częstotliwość kapitalizacji: </label>
+            <select id="okres-kapitalizacji">
+               <option value = "12">Miesięcznie</option>
+               <option value = "24">Kwartalnie</option>
+               <option value = "1" selected="selected">Rocznie</option>
+            </select>
+            
+            <label for="ilosc-lat">Ilość lat: </label>
+            <input type="number" id="ilosc-lat" min="1" value="1">
+            <br/>
+            <label for="oprocentowanie">Stopa zwrotu w %: </label>
+            <input type="number" id="oprocentowanie" min="0" value="10">
+            
+            <br/>
+            <label for="podatek">Uwzględnij podatek belki 19%: </label>
+            <input type="checkbox" id="podatek">
+            
+            <br/>
+            <input type="submit" value="Oblicz" onclick="oblicz(event)">
+
+        </form>
+    </div>
+    Wynik:
+    <p id="wynik"></p>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

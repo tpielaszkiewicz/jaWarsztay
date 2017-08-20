@@ -1,0 +1,17 @@
+#head{
+    font-size: 24px;
+}
+
+#formularz{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#formularz input{
+    margin-bottom: 20px;
+}
+
+#wynik{
+    margin: 5px;
+}
